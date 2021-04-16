@@ -13,6 +13,14 @@
 		5303444426232C1600487F82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303442F26232C1400487F82 /* ContentView.swift */; };
 		5303444526232C1600487F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5303443026232C1600487F82 /* Assets.xcassets */; };
 		5303444626232C1600487F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5303443026232C1600487F82 /* Assets.xcassets */; };
+		53034452262331E500487F82 /* TaylorSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53034451262331E500487F82 /* TaylorSwiftView.swift */; };
+		53034453262331E500487F82 /* TaylorSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53034451262331E500487F82 /* TaylorSwiftView.swift */; };
+		530344572624679E00487F82 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530344562624679E00487F82 /* Order.swift */; };
+		530344582624679E00487F82 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530344562624679E00487F82 /* Order.swift */; };
+		53409CA626246C680040BFB0 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53409CA526246C680040BFB0 /* AddressView.swift */; };
+		53409CA726246C680040BFB0 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53409CA526246C680040BFB0 /* AddressView.swift */; };
+		53409CAB262472D30040BFB0 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53409CAA262472D30040BFB0 /* CheckoutView.swift */; };
+		53409CAC262472D30040BFB0 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53409CAA262472D30040BFB0 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,10 @@
 		5303443D26232C1600487F82 /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5303443F26232C1600487F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5303444026232C1600487F82 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		53034451262331E500487F82 /* TaylorSwiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaylorSwiftView.swift; sourceTree = "<group>"; };
+		530344562624679E00487F82 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		53409CA526246C680040BFB0 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		53409CAA262472D30040BFB0 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,10 @@
 				5303442E26232C1400487F82 /* CupcakeCornerApp.swift */,
 				5303442F26232C1400487F82 /* ContentView.swift */,
 				5303443026232C1600487F82 /* Assets.xcassets */,
+				53034451262331E500487F82 /* TaylorSwiftView.swift */,
+				530344562624679E00487F82 /* Order.swift */,
+				53409CA526246C680040BFB0 /* AddressView.swift */,
+				53409CAA262472D30040BFB0 /* CheckoutView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -188,7 +204,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5303444326232C1600487F82 /* ContentView.swift in Sources */,
+				53034452262331E500487F82 /* TaylorSwiftView.swift in Sources */,
+				53409CAB262472D30040BFB0 /* CheckoutView.swift in Sources */,
+				530344572624679E00487F82 /* Order.swift in Sources */,
 				5303444126232C1600487F82 /* CupcakeCornerApp.swift in Sources */,
+				53409CA626246C680040BFB0 /* AddressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +217,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5303444426232C1600487F82 /* ContentView.swift in Sources */,
+				53034453262331E500487F82 /* TaylorSwiftView.swift in Sources */,
+				53409CAC262472D30040BFB0 /* CheckoutView.swift in Sources */,
+				530344582624679E00487F82 /* Order.swift in Sources */,
 				5303444226232C1600487F82 /* CupcakeCornerApp.swift in Sources */,
+				53409CA726246C680040BFB0 /* AddressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

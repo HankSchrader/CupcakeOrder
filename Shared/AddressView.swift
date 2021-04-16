@@ -1,0 +1,50 @@
+//
+//  AddressView.swift
+//  CupcakeCorner
+//
+//  Created by Erik Mikac on 4/12/21.
+//
+
+import SwiftUI
+
+struct AddressView: View {
+    @ObservedObject var order: Order
+
+    var body: some View {
+        Form {
+            Section {
+                TextField("Name", text: $order.name)
+                TextField("Street Address", text: $order.streetAddress)
+                TextField("City", text: $order.city)
+                TextField("Zip", text: $order.zip)
+            }
+        
+            
+            Section {
+                NavigationLink(destination: CheckoutView(order: order)) {
+                    Text("Check Out")
+                }
+            }
+            .disabled(order.hasValidAddress == false && order.streetAddress.isOnlyWhiteSpace() == false)
+        }
+        .navigationBarTitle("Delivery Details", displayMode: .inline)
+    }
+    
+}
+
+extension String {
+    func isOnlyWhiteSpace() -> Bool{
+        for char in self {
+            if char != " " {
+                return true
+            }
+        }
+        return false
+    }
+}
+
+struct AddressView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddressView(order: Order())
+    }
+}
