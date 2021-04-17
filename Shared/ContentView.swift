@@ -10,40 +10,40 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @ObservedObject var order = Order()
-    
+    @ObservedObject var orderWrapper = OrderWrapper()
     var body: some View {
+   
         NavigationView {
             Form {
                 Section{
                     Picker("Select you cake type",
-                           selection: $order.type) {
+                           selection: $orderWrapper.order.type) {
                         ForEach(0..<Order.types.count) {
                             Text(Order.types[$0])
                         }
                     }
-                    Stepper(value: $order.quantity, in: 3...20) {
-                        Text("Number of cakes: \(order.quantity)")
+                    Stepper(value: $orderWrapper.order.quantity, in: 3...20) {
+                        Text("Number of cakes: \(orderWrapper.order.quantity)")
                     }
                 }
                 
                 Section{
-                    Toggle(isOn: $order.specialRequestEnabled.animation(), label: {
+                    Toggle(isOn: $orderWrapper.order.specialRequestEnabled.animation(), label: {
                         Text("Any Special Requests?")
                     })
                     
-                    if order.specialRequestEnabled {
-                          Toggle(isOn: $order.extraFrosting) {
+                    if orderWrapper.order.specialRequestEnabled {
+                        Toggle(isOn: $orderWrapper.order.extraFrosting) {
                               Text("Add extra frosting")
                           }
 
-                          Toggle(isOn: $order.addSprinkles) {
+                        Toggle(isOn: $orderWrapper.order.addSprinkles) {
                               Text("Add extra sprinkles")
                           }
                       }
                 }
                 Section {
-                    NavigationLink(destination: AddressView(order: order)) {
+                    NavigationLink(destination: AddressView(order: orderWrapper)) {
                         Text("Delivery details")
                     }
                 }
